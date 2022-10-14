@@ -1,0 +1,39 @@
+body 
+{
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.buttons
+{
+    display: flex;
+}
+
+.buttons > button
+{
+    border-radius: 25px;
+    border: 2px solid whitesmoke;
+    padding: 0 20px;
+    font-size: 20pt;
+    background-color: orange;
+    color: whitesmoke;
+    margin: 10pt;
+    font-family: PT Mono;
+}
+
+.buttons > button:active
+{
+    background-color: whitesmoke;
+    color: orange;
+}
+
+.watch
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 60px;
+    font-family: PT Mono;
+    letter-spacing: 7px;
+}
