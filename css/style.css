@@ -1,14 +1,17 @@
 :root 
 {
-    --base-color: orange;
+    --base_bg: pink;
+    --hover-color: rgb(255, 157, 0);
     --base-text: whitesmoke;
-    --in-dev-color: purple;
+    --click-color: purple;
+    --in-dev-color: yellow;
+    --screen_bg: black;
+    --screen_color: rgb(213, 111, 213);
 }
-
 
 body 
 {
-    background-color: var(--base-color);
+    background-color: var(--base_bg);
     color: var(--base-text);
 }
 
@@ -23,17 +26,25 @@ body
     font-size: 3em;
     font-family: PT Mono;
     letter-spacing: 7px;
-    
+    text-align: center;
 }
 
 #StopWatchDisplay
 {
-    color: var(--in-dev-color);
+    border-radius: 25px;
+    color: var(--screen_color);
+    background-color: var(--screen_bg);
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 20pt;
+    padding: 10pt;
 }
 
 .buttons
 {
     display: flex;
+    justify-content: space-around;
+
 }
 
 .buttons > button
@@ -42,14 +53,20 @@ body
     border: 2px solid var(--base-text);
     padding: 0 20px;
     font-size: 20pt;
-    background-color: var(--base-color);
+    background-color: var(--base_bg);
     color: var(--base-text);
     margin: 10pt;
     font-family: PT Mono;
+    opacity: 0.8;
+}
+
+.buttons > button:hover
+{
+    opacity: 1.0;
 }
 
 .buttons > button:active
 {
-    background-color: var(--base-text);
-    color: var(--base-color);
+    background-color: var(--click-color);
+    color: var(--base_bg);
 }
