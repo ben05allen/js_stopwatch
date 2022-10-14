@@ -1,3 +1,3 @@
 # Stop Watch
 
-simple JS Project
+Simple JS Project
