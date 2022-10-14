@@ -3,7 +3,7 @@
     --base_bg: pink;
     --hover-color: rgb(255, 157, 0);
     --base-text: whitesmoke;
-    --click-color: purple;
+    --click-color: cyan;
     --in-dev-color: yellow;
     --screen_bg: black;
     --screen_color: rgb(213, 111, 213);
@@ -29,6 +29,13 @@ body
     text-align: center;
 }
 
+#frame
+{
+    border-radius: 30px;
+    border: 2px solid var(--base-text);
+    margin: 10pt;
+}
+
 #StopWatchDisplay
 {
     border-radius: 25px;
@@ -36,7 +43,7 @@ body
     background-color: var(--screen_bg);
     font-weight: bold;
     font-size: 3.5em;
-    margin: 20pt;
+    margin: 5pt;
     padding: 10pt;
 }
 
@@ -69,4 +76,5 @@ body
 {
     background-color: var(--click-color);
     color: var(--base_bg);
+    font-weight: bold;
 }
